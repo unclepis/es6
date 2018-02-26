@@ -59,6 +59,7 @@
   6）其他
   
     - list [1,2,3] 有序集合
+    
     ```
       userName=['pis','eric']
       len(username) // 2
