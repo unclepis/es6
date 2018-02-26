@@ -58,7 +58,7 @@
     
   6）其他
   
-    ### list [1,2,3] 有序集合
+### list [1,2,3] 有序集合
     
     ```
       userName=['pis','eric']
@@ -79,7 +79,7 @@
       - 如果list里面的元素是list，就相当于一个多维数组 data[3][0]  test
       - name = []  len(name)就等于0，也就是一个空的list
       
-    ### tuple元组 (1,2,3)
+### tuple元组 (1,2,3)
       - 有序列表
       - 和list很相似，但是tuple一旦初始化就不能修改
       - classMate = ('pis','eric') 因为不能修改，所以没有append和insert，pop等方法
@@ -87,7 +87,7 @@
       - 如果要定义有一个元素的tuple，需要写一个，否则会被当做括号解析 name= ('pis',)
       - 注意tuple中如果有list，list的值是可以修改的，但是tuple还是指向该list，所以tuple还是没有被修改，和es6定义的引用类型const一样
      
-    ### dist {key:value}
+### dist {key:value}
       - 判断key是否存在 // 'item' in dist
       
       ```
@@ -97,7 +97,7 @@
         info.get('son',-1) // -1 默认如果不存在返回None，因为返回None的时候python交互环境不显示结果，所以也可以自定义返回值，如-1
       ```
       - 删除 info.pop('name')  // 删除的时候value也会被删除
-    ### set new set([1,2,3]) // 接的参数是list，因为set是key不能重复，所以set中不能有重复项
+### set new set([1,2,3]) // 接的参数是list，因为set是key不能重复，所以set中不能有重复项
       - set和dict类似，但是是一组key的集合，但是不存储value
       - 创建 info = {1,2,3}  info = set([1,2,3]) 使用set创建一个set的时候需要传入一个list
       - 添加 add() info.add(4) info {1,2,3,4}
