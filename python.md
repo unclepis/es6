@@ -34,18 +34,21 @@
         line2''') 
     ```
   4）boolean布尔值
+  
     - True/False // 注意是首字母大写，python是严格的区分大小写的
     - 布尔值可以使用and,or,not运算表示与运算，或运算和非运算
     
   5）空值
+  
     - None // 注意不是js中的null，None也不是0，是一种特殊的空值
     
   6）其他
-    -list [1,2,3] 有序列表
-    -tuple (1,2,3)
-    -dist {key:value}
-    -set new set([1,2,3]) // 接的参数是list，因为set是key不能重复，所以set中不能有重复项
-    -自定义类型
+  
+    - list [1,2,3] 有序列表
+    - tuple (1,2,3)
+    - dist {key:value}
+    - set new set([1,2,3]) // 接的参数是list，因为set是key不能重复，所以set中不能有重复项
+    - 自定义类型
   
 ## 备注
   - 以#开头的语句是备注
