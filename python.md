@@ -58,9 +58,31 @@
     
   6）其他
   
-    - list [1,2,3] 有序列表
-    - tuple (1,2,3)
-    - dist {key:value}
+    - list [1,2,3] 有序集合
+    ```
+      userName=['pis','eric']
+      len(username) // 2
+      userName[0] // pis
+      userName[-1] // 取最后一个元素的快捷表示，一次类推userName[-2]
+    ```
+      - 去长度使用len()方法
+      - 取元素使用index索引，也可以使用负值从后往前取元素
+      - 也可以使用append()方法追加元素，相当于js数组的push方法
+      - 也可以使用insert(index,item)在指定的位置插入元素 // userName.insert(1,'cindy')  ['pis','eric','cindy']
+      - 也可以使用pop()删掉元素 // userName.pop() 和js数组的pop方法一样，删掉末尾的元素
+      - pop(index)是删掉index上的元素
+      - 修改元素使用赋值语句 // userName[1] = 'xindy'
+      - list里面数据结构可以不一样 //data = ['people',111,True,['test']]
+      - 如果list里面的元素是list，就相当于一个多维数组 data[3][0]  test
+      - name = []  len(name)就等于0，也就是一个空的list
+    - tuple元组 (1,2,3)
+      - 有序列表
+      - 和list很相似，但是tuple一旦初始化就不能修改
+      - classMate = ('pis','eric') 因为不能修改，所以没有append和insert，pop等方法
+      - 但是读取数据是可以的，classMate[-1]  eric,但是不能赋值成别的元素
+      - 如果要定义有一个元素的tuple，需要写一个，否则会被当做括号解析 name= ('pis',)
+      - 注意tuple中如果有list，list的值是可以修改的，但是tuple还是指向该list，所以tuple还是没有被修改，和es6定义的引用类型const一样
+     - dist {key:value}
     - set new set([1,2,3]) // 接的参数是list，因为set是key不能重复，所以set中不能有重复项
     - 自定义类型
 ## 数据类型校验
@@ -71,11 +93,51 @@
     isinstance(name,string)
     isinstance(name,(string,int)) // name为string或者int类型的实例 会返货boolean  
   ```
+## 条件判断
+  - python的条件判断和js的一样，只是syntax用缩进和冒号
+  ```
+    name = 10
+    if name>1: // 别忘记写：，而且if的条件不用使用括号括起来
+      print('user is more than 1') // python里面缩进代表代码块
+    elif name>18: // elif是else if的缩写
+      print('user is more than 18')
+    else:
+      print('user is a adult')
+  ```
+  - if elif else和js的条件判断一样，每个场景是互斥的，也就是说从上往下执行，当满足条件了其他分支是不会运行的
+## 循环
+  - python提供两种循环 
+  
+  for...in依次把list或tuple中的元素迭代出来
+  
+  ```
+    for age in list(range(5)):
+      print(age); // 0,1,2,3,4
+  ```
+  while循环
+  
+  ```
+    n = 10
+    sum=0
+    while n>0:
+      sum = sum+n;
+      n=n-1;
+    print(sum) // 1-10求和
+  ```
 ## 常量
   - 所谓常量就是不能变的变量
   - 通常用全部大写的变量名表示一个常量。例如PI
   - python没有任何机制阻止常量被修改，但是这都是默认的习惯
 ## 备注
   - 以#开头的语句是备注
-  
+## 工具函数
+- len()
+- isinstance()
+- append()
+- insert()
+- pop()
+- int()
+- list()
+- range()
+  
 
