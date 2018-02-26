@@ -65,6 +65,7 @@
       userName[0] // pis
       userName[-1] // 取最后一个元素的快捷表示，一次类推userName[-2]
     ```
+    
       - 去长度使用len()方法
       - 取元素使用index索引，也可以使用负值从后往前取元素
       - 也可以使用append()方法追加元素，相当于js数组的push方法
@@ -85,6 +86,7 @@
      - dist {key:value}
     - set new set([1,2,3]) // 接的参数是list，因为set是key不能重复，所以set中不能有重复项
     - 自定义类型
+    
 ## 数据类型校验
   - isinstance(variable,type) 
   
