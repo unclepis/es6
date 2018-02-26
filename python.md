@@ -41,11 +41,11 @@
     - None // 注意不是js中的null，None也不是0，是一种特殊的空值
     
   6）其他
-    - list [1,2,3] 有序列表
-    - tuple (1,2,3)
-    - dist {key:value}
-    - set new set([1,2,3]) // 接的参数是list，因为set是key不能重复，所以set中不能有重复项
-    - 自定义类型
+    -list [1,2,3] 有序列表
+    -tuple (1,2,3)
+    -dist {key:value}
+    -set new set([1,2,3]) // 接的参数是list，因为set是key不能重复，所以set中不能有重复项
+    -自定义类型
   
 ## 备注
   - 以#开头的语句是备注
