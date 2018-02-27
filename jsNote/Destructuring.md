@@ -1,4 +1,68 @@
 # 数组/对象/字符串/函数解构赋值
+## 解构赋值常用操作
+- 1.交换位置 let [x,y] = [1,2]  [x,y] = [y,x]
+- 2.从函数返回多个值
+
+```
+ function test(){
+    return [a,b,c]
+ }
+ let [a,b,c] = test()
+ let{x,y} = test1() // 对象的解构一样
+ 
+ 这个在es6中import模块中的部分经常使用
+ 在react中经常有import React,{Component} from 'react'
+ import{connect} from 'redux' 其实都是对解构的使用
+```
+- 3.将函数的参数对应起来
+
+```
+  function test({name,age}){
+    console.log(`name is ${name} and age is #{age}`) // 将参数的name和age和函数内部的参数对应起来
+  }
+```
+- 4.提取数据
+
+```
+  var info = {
+    name:'pis',
+    relatives:[
+      father:'piss',
+      mother:'pisss'
+    ]
+  }
+  let {name,relatives:parents} = info // 方便的提取数据，如果需要，还可以修改参数的名字
+  // name pis parents是个数组
+```
+- 5.函数默认参数设置
+
+```
+  $.ajax = function(
+    url,
+    method = 'get',
+    success = function(){}
+  ){
+    
+  }
+```
+- 6.Map遍历
+
+```
+  let map = new Map()
+  map.set('name','pis')
+  for (let {key,value} of map){
+	  console.log(`${key} is ${value}`)
+}
+```
+- 7.模块导入 
+
+```
+  import {conncet} from 'redux'
+  import {Provider} from 'react-redux'
+  import {createStore} from 'redux'
+```
+
+
 ## 数组解构赋值
 - 1.从数组和对象中提取值，对变量进行赋值，这被称为解构（Destructuring）。
 - 2.本质上，这种写法属于“模式匹配”，只要等号两边的模式相同，左边的变量就会被赋予对应的值
